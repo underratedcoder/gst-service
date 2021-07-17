@@ -21,7 +21,7 @@ public class MyController {
 
 
     // Get gst details
-    @GetMapping("/get_gst_detail")
+    @GetMapping("/get_gst_detail/{gstin}")
     public GSTDetail getGstDetails(@PathVariable String gstin) {
         return gstService.getGSTDetails(gstin);
     }
